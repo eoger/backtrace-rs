@@ -22,6 +22,7 @@ fn main() {
 
     let mut build = cc::Build::new();
     build
+        .debug(true)
         .include("src/libbacktrace")
         .include(&out_dir)
         .warnings(false)
